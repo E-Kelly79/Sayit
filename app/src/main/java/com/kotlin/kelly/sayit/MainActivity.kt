@@ -1,5 +1,6 @@
 package com.kotlin.kelly.sayit
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun login(view: View) {
+        val loginActivity = Intent(this, LoginActivity::class.java)
+        startActivity(loginActivity)
     }
 
     fun addChannel(view: View) {
